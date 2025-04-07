@@ -8,8 +8,6 @@
 
 .App {
   display: block;
-  width: 850px;
-  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -27,6 +25,11 @@
   background: linear-gradient(0.25turn, #E65895, #BC6BE8);
   padding: 0.3rem 1rem;
   border-radius: 20px;
+}
+
+.quiz {
+  width: 850px;
+  margin: 0 auto;
 }
 
 .quiz-container {
@@ -63,6 +66,44 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+}
+
+.result {
+  width: 394px;
+  display: block;
+  margin: 5rem auto;
+  background-color: #393F6E;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.result h3, .result p {
+  color: #E2E4F3;
+}
+
+.result h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.result p {
+  margin-bottom: 3rem;
+}
+
+.btn-again {
+  background: linear-gradient(0.25turn, #E65895, #BC6BE8);
+  padding: 1.25rem 4.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
 }
 /* NUMBER LIST - STYLE */
 .number {

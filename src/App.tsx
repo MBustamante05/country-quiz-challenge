@@ -116,7 +116,7 @@ function App() {
     <div className="App">
       {isLoading && <p>Loading...</p>}
       {questionNumber < 10 ? (
-        <>
+        <div className="quiz">
           <div className="header">
             <h1>Country Quiz</h1>
             <p>
@@ -154,11 +154,13 @@ function App() {
               ))}
             </div>
           </div>
-        </>
+        </div>
       ) : (
         <div className="result">
-          <h2>Your score: {score}</h2>
-          <button onClick={() => setQuestionNumber(0)}>Play Again</button>
+          <img src="/congrats.png" alt="" />
+          <h3>Congrats! You have completed the quiz</h3>
+          <p>You answer <span>{score}</span>/10 correctly</p>
+          <button className="btn-again" onClick={() => setQuestionNumber(0)}>Play Again</button>
         </div>
       )}
     </div>
