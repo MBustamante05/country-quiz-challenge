@@ -6,8 +6,10 @@ type Props = {
 }
 
 function NumberList({ number, passed }: Props) {
+  let className = "number";
+  if (passed) className += " question-number";
   return (
-    <div className={passed ? "number passed" : "number"}>{number}</div>
+    <div className={className}>{number}</div>
   )
 }
 
